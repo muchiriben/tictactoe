@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js" defer></script>
+	<title>TicTacToe</title>
+</head>
+<body>
+	<div class="tictactoe">
+	  <div class="head">
+        <h1>
+            <span>Tic</span>
+            <span>Tac</span>
+            <span>Toe</span>
+		</h1>
+      </div>
+      <div class="btns">
+        <a class="button" href="x3.html">3x3</a>
+        <a class="button" href="x4.html">4x4</a>
+      </div>
+		<div class="scores">
+    	<h2>Scores: X's =></h2><div class="xwin" xwins></div> <h2>O's =></h2><div class="owin" owins></div>
+        </div>
+    <div class="board" id="board">
+    	<div class="cell" data-cell onclick="playAudio('img/mysound4.mp3')"></div>
+    	<div class="cell" data-cell onclick="playAudio('img/mysound4.mp3')"></div>
+    	<div class="cell" data-cell onclick="playAudio('img/mysound4.mp3')"></div>
+    	<div class="cell" data-cell onclick="playAudio('img/mysound4.mp3')"></div>
+    	<div class="cell" data-cell onclick="playAudio('img/mysound4.mp3')"></div>
+    	<div class="cell" data-cell onclick="playAudio('img/mysound4.mp3')"></div>
+    	<div class="cell" data-cell onclick="playAudio('img/mysound4.mp3')"></div>
+    	<div class="cell" data-cell onclick="playAudio('img/mysound4.mp3')"></div>
+    	<div class="cell" data-cell onclick="playAudio('img/mysound4.mp3')"></div>
+    </div>
+	</div>
+	
+    <div  class="winning-message" id="winningMessage" onchange="playAudio('img/mysound2.mp3')">
+    	<div data-winning-message-text></div>
+    	<button id="restartButton" onclick="playAudio('img/mysound2.mp3')">Restart</button>
+    </div>
+</body>
+</html>
